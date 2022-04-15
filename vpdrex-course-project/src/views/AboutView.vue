@@ -1,5 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <AboutPage></AboutPage>
 </template>
+
+<script type="ts">
+
+import { Vue, Options } from 'vue-class-component'
+import AboutPage from '@/components/AboutPage.vue'
+
+@Options({
+  components: {
+    AboutPage
+  }
+})
+
+export default class HomeView extends Vue {}
+</script>
